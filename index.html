@@ -70,16 +70,19 @@
   </section>
 
   <!-- Footer with Easter Egg -->
-  <footer>
-    <p>Hand-crafted by Alexsandra ✨</p>
-    <div class="easter-egg-trigger" onclick="revealMagic()">
-      🌸
-    </div>
-    <div class="easter-egg-message" id="easter-egg-message">
-      <p>"I came here to make beauty sacred again — to soften edges, to rewrite stories, and to remind the world that magic lives in the details."</p>
-    </div>
-  </footer>
+<footer>
+  <p>Hand-crafted by Alexsandra ✨</p>
 
+  <!-- 🌸 Easter Egg Trigger -->
+  <span id="easter-trigger" class="clickable" style="cursor: pointer; display: inline-block; margin-top: 2rem;">
+    🌸
+  </span>
+
+  <!-- ✨ Hidden Message -->
+  <div id="easter-egg">
+    “I came here to make beauty sacred again — to soften edges, to rewrite stories, and to remind the world that magic lives in the details.”
+  </div>
+</footer>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="script.js"></script>
   <script>
