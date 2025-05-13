@@ -423,3 +423,50 @@ section {
   max-width: 700px;
   margin: 0 auto;
 }
+.services-grid {
+  background-color: #DFEBE3;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.services-grid h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: #6A7662;
+  margin-bottom: 2.5rem;
+}
+
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 30px;
+  text-align: left;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+}
+
+.service-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  color: #DBB79F;
+  margin-bottom: 1rem;
+}
+
+.service-card p {
+  font-family: 'Lato', sans-serif;
+  color: #6A7662;
+  font-size: 1rem;
+  line-height: 1.6;
+}
