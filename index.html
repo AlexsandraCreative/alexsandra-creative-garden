@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alexsandra Creative</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2e0e6fd5a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Floating Cursor Flower -->
+  <div class="custom-cursor">
+    <img src="assets/icons/flower-cursor.svg" alt="Flower Cursor">
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content" data-aos="fade-up">
+      <h1>Alexsandra Creative</h1>
+      <p>Where storytelling meets stunning digital design.</p>
+      <a href="#about" class="cta-btn">See More</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container" data-aos="fade-up">
+      <h2>Hi, I’m Alexsandra</h2>
+      <p>I bring brands to life through story-rich strategy and design. My work is intuitive, visual, and soul-led — merging aesthetic elegance with deep intentionality.</p>
+    </div>
+  </section>
+
+  <!-- Work Showcase (Placeholder) -->
+  <section class="work" id="work">
+    <div class="container" data-aos="fade-up">
+      <h2>Creative Highlights</h2>
+      <div class="gallery"> <!-- JS Carousel to come here -->
+        <p>[Gallery coming soon]</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Talents Section -->
+  <section class="talents" id="talents">
+    <div class="container" data-aos="fade-up">
+      <h2>What I Do</h2>
+      <div class="cards">
+        <div class="card">Storytelling Strategy</div>
+        <div class="card">Visual Branding</div>
+        <div class="card">Creative Direction</div>
+        <div class="card">Content Systems</div>
+        <div class="card">Digital Design</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container" data-aos="fade-up">
+      <h2>Let’s Connect</h2>
+      <form id="contact-form">
+        <input type="text" placeholder="Name" required />
+        <input type="email" placeholder="Email" required />
+        <textarea placeholder="Message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer with Easter Egg -->
+  <footer>
+    <p>Hand-crafted by Alexsandra ✨</p>
+    <div class="easter-egg-trigger" onclick="revealMagic()">
+      🌸
+    </div>
+    <div class="easter-egg-message" id="easter-egg-message">
+      <p>"I came here to make beauty sacred again — to soften edges, to rewrite stories, and to remind the world that magic lives in the details."</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
