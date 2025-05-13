@@ -102,7 +102,6 @@ button.cta:hover {
   object-fit: contain;
   display: block;
 }
-
 /* === Clickable Easter Egg Hover Effect === */
 .clickable {
   transition: transform 0.3s ease;
