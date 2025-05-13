@@ -1,6 +1,16 @@
 // 🌸 Flower Cursor Setup
 const cursor = document.createElement('div');
 cursor.classList.add('custom-cursor');
+
+const flower = document.createElement('img');
+flower.src = 'assets/icons/flower-cursor.svg';
+flower.alt = 'Flower Cursor';
+flower.style.width = '100%';
+flower.style.height = '100%';
+flower.style.objectFit = 'contain';
+flower.style.display = 'block';
+
+cursor.appendChild(flower);
 document.body.appendChild(cursor);
 
 document.addEventListener('mousemove', (e) => {
@@ -20,7 +30,7 @@ interactiveEls.forEach(el => {
 });
 
 // ✨ Easter Egg Reveal Logic
-const hiddenTrigger = document.getElementById('easter-trigger'); // e.g. a hidden icon or text
+const hiddenTrigger = document.getElementById('easter-trigger');
 const easterEgg = document.getElementById('easter-egg');
 
 if (hiddenTrigger && easterEgg) {
