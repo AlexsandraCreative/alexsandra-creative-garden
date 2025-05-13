@@ -239,3 +239,29 @@ section {
 .site-nav a:hover::after {
   width: 100%;
 }
+.about-hero {
+  background-color: #F4E7D6;
+  padding: 120px 20px 100px;
+  text-align: center;
+}
+
+.about-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  color: #6A7662;
+  margin-bottom: 1rem;
+}
+
+.about-tagline {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2rem;
+  color: #6A7662;
+  font-style: italic;
+  max-width: 600px;
+  margin: 0 auto;
+}
