@@ -1,4 +1,14 @@
 /* === Base Reset === */
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: #6A7662;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+p, a, button, input, textarea {
+  font-family: 'Lato', sans-serif;
+}
 * {
   margin: 0;
   padding: 0;
