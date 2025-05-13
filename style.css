@@ -285,3 +285,50 @@ section {
   margin: 0 auto;
   line-height: 1.8;
 }
+.essence {
+  background-color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.essence h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  color: #6A7662;
+  margin-bottom: 2rem;
+}
+
+.essence-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.essence-card {
+  background-color: #F4E7D6;
+  border-radius: 16px;
+  padding: 30px 25px;
+  max-width: 300px;
+  text-align: left;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.essence-card:hover {
+  transform: translateY(-6px);
+}
+
+.essence-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  color: #DBB79F;
+  margin-bottom: 0.8rem;
+}
+
+.essence-card p {
+  font-family: 'Lato', sans-serif;
+  color: #6A7662;
+  font-size: 1rem;
+  line-height: 1.6;
+}
