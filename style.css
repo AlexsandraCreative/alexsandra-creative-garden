@@ -86,7 +86,7 @@ button.cta:hover {
 
 /* === Custom Flower Cursor === */
 .custom-cursor {
-  position: fixed;
+ position: fixed;
   top: 0;
   left: 0;
   width: 32px;
@@ -99,6 +99,13 @@ button.cta:hover {
   transition: transform 0.15s ease;
 }
 
+/* === Clickable Easter Egg Hover Effect === */
+.clickable {
+  transition: transform 0.3s ease;
+}
+.clickable:hover {
+  transform: scale(1.2);
+}
 /* === Easter Egg Reveal === */
 #easter-egg {
   display: none;
