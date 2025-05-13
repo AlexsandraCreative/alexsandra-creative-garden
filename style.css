@@ -196,3 +196,43 @@ section {
     font-size: 0.9rem;
   }
 }
+.site-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  padding: 30px 0;
+  background-color: #F4E7D6;
+  border-bottom: 1px solid #DBB79F;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.site-nav a {
+  font-family: 'Lato', sans-serif;
+  color: #6A7662;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.site-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: #DBB79F;
+  transition: width 0.3s ease;
+}
+
+.site-nav a:hover {
+  color: #DBB79F;
+}
+
+.site-nav a:hover::after {
+  width: 100%;
+}
