@@ -332,3 +332,38 @@ section {
   font-size: 1rem;
   line-height: 1.6;
 }
+.vibe-grid {
+  background-color: #DFEBE3;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.vibe-grid h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: #6A7662;
+  margin-bottom: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.tile {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 14px;
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  color: #6A7662;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.tile:hover {
+  transform: scale(1.05);
+}
