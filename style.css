@@ -86,17 +86,21 @@ button.cta:hover {
 
 /* === Custom Flower Cursor === */
 .custom-cursor {
- position: fixed;
+  position: fixed;
   top: 0;
   left: 0;
   width: 32px;
   height: 32px;
   pointer-events: none;
-  background-image: url('assets/icons/flower-cursor.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
   z-index: 10000;
   transition: transform 0.15s ease;
+}
+
+.custom-cursor img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 /* === Clickable Easter Egg Hover Effect === */
