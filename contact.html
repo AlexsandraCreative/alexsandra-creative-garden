@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Alexsandra Creative – Contact</title>
+  <title>Contact – Alexsandra Creative</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato&display=swap" rel="stylesheet">
 </head>
@@ -17,16 +17,41 @@
     <a href="contact.html">Contact</a>
   </nav>
 
-  <main class="page-content">
-    <h1>Contact</h1>
-    <p>✨ This page is blooming soon ✨</p>
-  </main>
- <!-- 🌸 Flower Cursor Element -->
+  <!-- 🌿 Contact Hero -->
+  <section class="contact-hero" data-aos="fade-up">
+    <h1>Let’s Connect</h1>
+    <p class="tagline">I’d love to hear from you — whether it’s a spark of an idea or a full vision ready to be brought to life.</p>
+  </section>
+
+  <!-- ✨ Contact Form -->
+  <section class="contact-form-section" data-aos="fade-up">
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p class="response-time">You can usually expect a reply within 48 hours ✨</p>
+  </section>
+
+  <!-- 🌸 Flower Cursor -->
   <div class="custom-cursor">
-    <img src="assets/icons/flower-cursor.svg" alt="Custom Cursor">
+    <img src="assets/icons/flower-cursor.svg" alt="Custom Cursor" />
   </div>
 
-  <!-- JavaScript Link -->
+  <!-- ✨ Footer with Easter Egg -->
+  <footer>
+    <p>Hand–crafted by Alexsandra ✨</p>
+    <span id="easter-trigger" class="clickable" style="cursor: pointer; display: inline-block; margin-top: 2rem;">🌸</span>
+    <div id="easter-egg">
+      “I came here to make beauty sacred again — to soften edges, to rewrite stories, and to remind the world that magic lives in the details.”
+    </div>
+  </footer>
+
+  <!-- ✅ Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="script.js"></script>
+  <script>AOS.init();</script>
+
 </body>
 </html>
