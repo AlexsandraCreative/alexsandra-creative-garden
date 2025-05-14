@@ -576,3 +576,49 @@ section {
   font-size: 1rem;
   line-height: 1.6;
 }
+/* 🌸 Testimonial Carousel Styles */
+.testimonial-carousel {
+  background-color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.testimonial-carousel h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: #6A7662;
+  margin-bottom: 2rem;
+}
+
+.carousel {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.testimonial {
+  display: none;
+  opacity: 0;
+  transition: opacity 1s ease;
+  font-size: 1.2rem;
+  color: #6A7662;
+  background: #FBECEC;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  font-family: 'Lato', sans-serif;
+}
+
+.testimonial.active {
+  display: block;
+  opacity: 1;
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 1rem;
+  font-style: italic;
+  color: #DBB79F;
+  font-family: 'Playfair Display', serif;
+}
