@@ -576,7 +576,7 @@ section {
   font-size: 1rem;
   line-height: 1.6;
 }
-/* 🌸 Testimonial Carousel Styles */
+/* 🌸 Testimonial Carousel Styles – Cleaned & Fixed */
 .testimonial-carousel {
   background-color: #fff;
   padding: 100px 20px;
@@ -592,22 +592,24 @@ section {
 
 .carousel {
   position: relative;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
-  overflow: hidden;
+  padding: 2rem 1rem;
 }
 
 .testimonial {
   display: none;
   opacity: 0;
-  transition: opacity 1s ease;
+  transition: opacity 0.6s ease;
+  background: #FBECEC;
+  padding: 3rem;
+  border-radius: 1.5rem;
   font-size: 1.2rem;
   color: #6A7662;
-  background: #FBECEC;
-  padding: 40px;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   font-family: 'Lato', sans-serif;
+  position: relative;
+  z-index: 1;
 }
 
 .testimonial.active {
@@ -622,76 +624,46 @@ section {
   color: #DBB79F;
   font-family: 'Playfair Display', serif;
 }
-/* 🌿 Carousel Buttons */
+
+/* 🌿 Carousel Buttons – On Top & Styled */
 .carousel-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(219, 183, 159, 0.8);
-  color: #fff;
-  border: none;
-  font-size: 2rem;
-  padding: 10px 20px;
-  border-radius: 50%;
-  cursor: pointer;
-  z-index: 10;
-  transition: background-color 0.3s ease;
-}
-
-.carousel-btn:hover {
-  background-color: #DBB79F;
-}
-
-.carousel-btn.left {
-  left: -50px;
-}
-
-.carousel-btn.right {
-  right: -50px;
-}
-
-/* Adjust spacing for smaller screens */
-@media (max-width: 768px) {
-  .carousel-btn.left {
-    left: 10px;
-  }
-  .carousel-btn.right {
-    right: 10px;
-}
-}
-.testimonial {
-  display: none;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-
-.testimonial.active {
-  display: block;
-  opacity: 1;
-}
-.carousel-btn {
   background: none;
   border: none;
-  font-size: 2rem; /* ← INCREASE SIZE */
-  color: #DBB79F;  /* ← Soft goldish pink tone */
+  font-size: 2.5rem;
+  color: #DBB79F;
   cursor: pointer;
+  z-index: 2;
   padding: 0 1rem;
   transition: transform 0.2s ease, color 0.3s ease;
 }
 
 .carousel-btn:hover {
   transform: scale(1.3);
-  color: #C7A072; /* Slightly deeper shade on hover */
+  color: #C7A072;
 }
 
-.carousel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
+.carousel-btn.left {
+  left: -1.5rem;
 }
-/* === Carousel Button Enhancements === */
-.carousel-btn {
-  padding: 0.5rem 1.5rem;
-  font-size: 2.2rem;
+
+.carousel-btn.right {
+  right: -1.5rem;
+}
+
+/* 📱 Mobile Friendly */
+@media (max-width: 768px) {
+  .carousel-btn.left {
+    left: 0.5rem;
+  }
+
+  .carousel-btn.right {
+    right: 0.5rem;
+  }
+
+  .testimonial {
+    padding: 2rem 1.5rem;
+  }
 }
