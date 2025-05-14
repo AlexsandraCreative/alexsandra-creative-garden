@@ -622,3 +622,40 @@ section {
   color: #DBB79F;
   font-family: 'Playfair Display', serif;
 }
+/* 🌿 Carousel Buttons */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(219, 183, 159, 0.8);
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  padding: 10px 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-btn:hover {
+  background-color: #DBB79F;
+}
+
+.carousel-btn.left {
+  left: -50px;
+}
+
+.carousel-btn.right {
+  right: -50px;
+}
+
+/* Adjust spacing for smaller screens */
+@media (max-width: 768px) {
+  .carousel-btn.left {
+    left: 10px;
+  }
+  .carousel-btn.right {
+    right: 10px;
+}
+}
