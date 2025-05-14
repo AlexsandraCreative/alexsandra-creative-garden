@@ -739,3 +739,20 @@ section {
   text-align: center;
   max-width: 100%;
 }
+.floating-easter-trigger {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.floating-easter-trigger img {
+  width: 48px;
+  height: 48px;
+  transition: transform 0.3s ease;
+}
+
+.floating-easter-trigger img:hover {
+  transform: scale(1.2) rotate(-10deg);
+  cursor: pointer;
+}
