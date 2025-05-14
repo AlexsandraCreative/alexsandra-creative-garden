@@ -39,16 +39,8 @@ if (hiddenTrigger && easterEgg) {
     easterEgg.scrollIntoView({ behavior: 'smooth' });
   });
 }
-// 🌸 Auto-Rotating Testimonials
-let currentTestimonial = 0;
-const testimonials = document.querySelectorAll(".testimonial");
-const rotateTestimonials = () => {
-  testimonials[currentTestimonial].classList.remove("active");
-  currentTestimonial = (currentTestimonial + 1) % testimonials.length;
-  testimonials[currentTestimonial].classList.add("active");
-};
-setInterval(rotateTestimonials, 6000); // 6 seconds per testimonial
-// 🌿 Carousel Controls
+
+// 🌿 Carousel Logic (Final Fixed)
 let currentTestimonial = 0;
 const testimonials = document.querySelectorAll(".testimonial");
 const leftBtn = document.querySelector(".carousel-btn.left");
@@ -69,9 +61,11 @@ function prevTestimonial() {
   showTestimonial(currentTestimonial);
 }
 
-// Auto-rotate
+// ✅ Auto-rotate
 setInterval(nextTestimonial, 6000);
 
-// Manual controls
-leftBtn.addEventListener("click", prevTestimonial);
-rightBtn.addEventListener("click", nextTestimonial);
+// ✅ Manual controls (only if buttons exist on the page)
+if (leftBtn && rightBtn) {
+  leftBtn.addEventListener("click", prevTestimonial);
+  rightBtn.addEventListener("click", nextTestimonial);
+}
