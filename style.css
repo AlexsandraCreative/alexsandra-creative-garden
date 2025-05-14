@@ -669,3 +669,24 @@ section {
   display: block;
   opacity: 1;
 }
+.carousel-btn {
+  background: none;
+  border: none;
+  font-size: 2rem; /* ← INCREASE SIZE */
+  color: #DBB79F;  /* ← Soft goldish pink tone */
+  cursor: pointer;
+  padding: 0 1rem;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.carousel-btn:hover {
+  transform: scale(1.3);
+  color: #C7A072; /* Slightly deeper shade on hover */
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
