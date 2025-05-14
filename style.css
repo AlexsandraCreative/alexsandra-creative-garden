@@ -538,6 +538,7 @@ section {
 .cta-footer .cta-button:hover {
   background-color: #C7A072;
 }
+/* === FIXED Service Cards Style === */
 .service-cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -579,3 +580,9 @@ section {
   margin-bottom: 1rem;
 }
 
+.service-card p {
+  font-family: 'Lato', sans-serif;
+  color: #6A7662;
+  font-size: 1rem;
+  line-height: 1.6;
+}
