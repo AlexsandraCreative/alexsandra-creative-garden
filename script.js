@@ -39,3 +39,12 @@ if (hiddenTrigger && easterEgg) {
     easterEgg.scrollIntoView({ behavior: 'smooth' });
   });
 }
+// 🌸 Auto-Rotating Testimonials
+let currentTestimonial = 0;
+const testimonials = document.querySelectorAll(".testimonial");
+const rotateTestimonials = () => {
+  testimonials[currentTestimonial].classList.remove("active");
+  currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+  testimonials[currentTestimonial].classList.add("active");
+};
+setInterval(rotateTestimonials, 6000); // 6 seconds per testimonial
