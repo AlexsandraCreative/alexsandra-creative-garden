@@ -41,31 +41,33 @@ if (hiddenTrigger && easterEgg) {
 }
 
 // 🌿 Testimonial Carousel Logic
-let currentTestimonial = 0;
-const testimonials = document.querySelectorAll(".testimonial");
-const leftBtn = document.querySelector(".carousel-btn.left");
-const rightBtn = document.querySelector(".carousel-btn.right");
+document.addEventListener('DOMContentLoaded', () => {
+  let currentTestimonial = 0;
+  const testimonials = document.querySelectorAll(".testimonial");
+  const leftBtn = document.querySelector(".carousel-btn.left");
+  const rightBtn = document.querySelector(".carousel-btn.right");
 
-function showTestimonial(index) {
-  testimonials.forEach(t => t.classList.remove("active"));
-  testimonials[index].classList.add("active");
-}
+  function showTestimonial(index) {
+    testimonials.forEach(t => t.classList.remove("active"));
+    testimonials[index].classList.add("active");
+  }
 
-function nextTestimonial() {
-  currentTestimonial = (currentTestimonial + 1) % testimonials.length;
-  showTestimonial(currentTestimonial);
-}
+  function nextTestimonial() {
+    currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+    showTestimonial(currentTestimonial);
+  }
 
-function prevTestimonial() {
-  currentTestimonial = (currentTestimonial - 1 + testimonials.length) % testimonials.length;
-  showTestimonial(currentTestimonial);
-}
+  function prevTestimonial() {
+    currentTestimonial = (currentTestimonial - 1 + testimonials.length) % testimonials.length;
+    showTestimonial(currentTestimonial);
+  }
 
-// ✅ Auto-rotate
-setInterval(nextTestimonial, 6000);
+  // Auto-rotate every 6 seconds
+  setInterval(nextTestimonial, 6000);
 
-// ✅ Manual controls
-if (leftBtn && rightBtn) {
-  leftBtn.addEventListener("click", prevTestimonial);
-  rightBtn.addEventListener("click", nextTestimonial);
-}
+  // Manual controls
+  if (leftBtn && rightBtn) {
+    leftBtn.addEventListener("click", prevTestimonial);
+    rightBtn.addEventListener("click", nextTestimonial);
+  }
+});
