@@ -40,7 +40,7 @@ if (hiddenTrigger && easterEgg) {
   });
 }
 
-// 🌿 Carousel Logic (Final Fixed)
+// 🌿 Testimonial Carousel Logic
 let currentTestimonial = 0;
 const testimonials = document.querySelectorAll(".testimonial");
 const leftBtn = document.querySelector(".carousel-btn.left");
@@ -64,7 +64,7 @@ function prevTestimonial() {
 // ✅ Auto-rotate
 setInterval(nextTestimonial, 6000);
 
-// ✅ Manual controls (only if buttons exist on the page)
+// ✅ Manual controls
 if (leftBtn && rightBtn) {
   leftBtn.addEventListener("click", prevTestimonial);
   rightBtn.addEventListener("click", nextTestimonial);
