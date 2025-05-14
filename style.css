@@ -690,3 +690,8 @@ section {
   justify-content: center;
   gap: 1.5rem;
 }
+/* === Carousel Button Enhancements === */
+.carousel-btn {
+  padding: 0.5rem 1.5rem;
+  font-size: 2.2rem;
+}
