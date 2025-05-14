@@ -534,3 +534,45 @@ section {
 .cta-footer .cta-button:hover {
   background-color: #C7A072;
 }
+.process {
+  background-color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.process h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  color: #6A7662;
+  margin-bottom: 2.5rem;
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.step {
+  background-color: #F4E7D6;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.step h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  color: #DBB79F;
+  margin-bottom: 0.6rem;
+}
+
+.step p {
+  font-family: 'Lato', sans-serif;
+  color: #6A7662;
+  font-size: 1rem;
+  line-height: 1.6;
+}
