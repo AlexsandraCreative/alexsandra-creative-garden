@@ -402,6 +402,7 @@ section {
 .cta-button:hover {
   background-color: #C7A072;
 }
+/* === Services Hero Section === */
 .services-hero {
   background-color: #F4E7D6;
   padding: 120px 20px 100px;
@@ -423,6 +424,8 @@ section {
   max-width: 700px;
   margin: 0 auto;
 }
+
+/* === Services Grid Section === */
 .services-grid {
   background-color: #DFEBE3;
   padding: 100px 20px;
@@ -436,24 +439,15 @@ section {
   margin-bottom: 2.5rem;
 }
 
+/* === Service Cards Styling === */
 .service-cards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
-}
-
-@media screen and (max-width: 1200px) {
-  .service-cards {
-    grid-template-columns: repeat(2, 1fr);
-
-}
-
-@media screen and (max-width: 700px) {
-  .service-cards {
-    grid-template-columns: 1fr;
+  padding: 2rem 1rem;
+  justify-items: center;
 }
 
 .service-card {
@@ -461,112 +455,9 @@ section {
   border-radius: 16px;
   padding: 30px;
   text-align: left;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease;
-}
-
-.service-card:hover {
-  transform: translateY(-6px);
-}
-
-.service-card h3 {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.2rem;
-  color: #DBB79F;
-  margin-bottom: 1rem;
-}
-
-.service-card p {
-  font-family: 'Lato', sans-serif;
-  color: #6A7662;
-  font-size: 1rem;
-  line-height: 1.6;
-}
-.philosophy {
-  background-color: #fff;
-  padding: 100px 20px;
-  text-align: center;
-}
-
-.philosophy h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2rem;
-  color: #6A7662;
-  margin-bottom: 2rem;
-}
-
-.philosophy p {
-  font-family: 'Lato', sans-serif;
-  font-size: 1.1rem;
-  color: #6A7662;
-  max-width: 700px;
-  margin: 0 auto;
-  line-height: 1.8;
-}
-.cta-footer {
-  background-color: #FBECEC;
-  padding: 100px 20px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.cta-footer .cta-line {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.6rem;
-  font-style: italic;
-  color: #6A7662;
-  margin-bottom: 2rem;
-  max-width: 700px;
-  text-align: center;
-}
-
-.cta-footer .cta-button {
-  display: inline-block;
-  padding: 14px 36px;
-  background-color: #DBB79F;
-  color: #fff;
-  font-family: 'Lato', sans-serif;
-  font-weight: bold;
-  font-size: 1rem;
-  border-radius: 50px;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.cta-footer .cta-button:hover {
-  background-color: #C7A072;
-}
-/* === FIXED Service Cards Style === */
-.service-cards {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-@media screen and (max-width: 1200px) {
-  .service-cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .service-cards {
-    grid-template-columns: 1fr;
-  }
-}
-
-.service-card {
-  background-color: #fff;
-  border-radius: 16px;
-  padding: 30px;
-  text-align: left;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease;
+  max-width: 280px;
 }
 
 .service-card:hover {
